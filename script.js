@@ -18,46 +18,48 @@ for (let i = 0; i < 2; i++) {
     const a = prompt("Один из последних просмотренных фильмов?", ""),
         b = prompt("На сколько оцените его?", "");
 
-    if(a != null && b != null && a != '' && b != '' && a.length < 50){
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
         personalMovieDB.movies[a] = b;
-    }
-    else{
+    } else {
         i--;
     }
 }
 
-if(personalMovieDB.count < 10){
+if (personalMovieDB.count < 10) {
     console.log('You have watched a few films');
 
-}else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
+} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
     console.log('You are common viewer');
 
-}else if(personalMovieDB.count > 30){
+} else if (personalMovieDB.count > 30) {
     console.log('You are cinephile');
-}
-else{
+} else {
     console.log('Error');
 }
 
-// let i = 0;
+// // let i = 0;
 
-// while(i < 2){
+// while (i < 2) {
 //     const a = prompt("Один из последних просмотренных фильмов?", ""),
 //         b = prompt("На сколько оцените его?", "");
 
-//     personalMovieDB.movies[a] = b;
-//     i++;
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         i++;
+//     }
 // }
 
-// let j = 0;
+// // let j = 0;
 
-// do{
+// do {
 //     const a = prompt("Один из последних просмотренных фильмов?", ""),
 //         b = prompt("На сколько оцените его?", "");
 
-//     personalMovieDB.movies[a] = b;
-//     j++;
-// }while(j < 2);
+//     if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+//         personalMovieDB.movies[a] = b;
+//         j++;
+//     }
+// } while (j < 2);
 
 
 console.log(personalMovieDB);
